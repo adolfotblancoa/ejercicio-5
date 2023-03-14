@@ -1,5 +1,4 @@
 package dominio;
-import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -68,4 +67,36 @@ public class Matematicas{
                     .collect(Collectors.toList());
         System.out.println(minusculas);
     }
+
+    public static void concatenarCadenas(List<String> palabras){
+        String concatenacion = palabras.stream()
+            .reduce("", (a, b) -> a + b);
+        System.out.println(concatenacion);
+    }
+
+    public static void transformarAMinusculas(List<String> palabras){
+        List<String> minusculas = palabras.stream()
+                    .map(x -> x.toLowerCase())
+                    .collect(Collectors.toList());
+        System.out.println(minusculas);
+        // pregunta lo mismo que el ejercicio 8?
+    }
+
+    public static void noEmpiezaPorA(List<String> palabras){
+        List<String> noA = palabras.stream()
+                    .filter(x -> x.charAt(0) != 'A')
+                    .collect(Collectors.toList());
+        System.out.println(noA);
+    }
+
+    public static void por2MayorQue6(List<Integer> numeros){
+        List<Integer> por2 = numeros.stream()
+                    .map(x -> x * 2)
+                    .filter(x -> x > 6)
+                    .collect(Collectors.toList());
+        System.out.println(por2);
+    }
+
+
+
 }

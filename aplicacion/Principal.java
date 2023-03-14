@@ -40,6 +40,23 @@ public class Principal {
         System.out.println("8. A partir de una lista de String, obtiene otra lista con sus elementos transformados a minúscula. ");
         List<String> lista8 = Arrays.asList("ADOlfo", "TOMAs", "blANco", "ARauJO");
         dominio.Matematicas.aMinusculas(lista8);
+        //ejer 14.9
+        System.out.println("9. Devuelve una cadena que sea la concatenación de todos los elementos de una lista de String. ");
+        List<String> lista9 = Arrays.asList("uno", "dos", "tres", "cuatro", "cinco");
+        dominio.Matematicas.concatenarCadenas(lista9);
+        //ejer 14.10
+        System.out.println("Devuelve una lista con todos los elementos de otra lista de String transformados a minúsculas. ");
+        List<String> lista10 = Arrays.asList("ADOlfo", "TOMAs", "blANco", "ARauJO");
+        dominio.Matematicas.transformarAMinusculas(lista10);
+        //ejer 14.11
+        System.out.println("11. Devuelve una lista con todos los elementos de otra lista de String que no empiezen por la letra 'A'.");
+        List<String> lista11 = Arrays.asList("aDOlfo", "TOMAs", "blANco", "ARauJO");
+        dominio.Matematicas.noEmpiezaPorA(lista11);
+        //ejer 14.12
+        System.out.println("Devuelve una lista con todos los números mayores que seis resultantes de multiplicar por 2 todos los elementos de una lista de entrada. ");
+        List<Integer> lista12 = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+        dominio.Matematicas.por2MayorQue6(lista12);
+
     }
     
 }
