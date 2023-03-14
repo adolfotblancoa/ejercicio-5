@@ -10,7 +10,7 @@ public class Personas {
         listaPersonas.add(persona);
     }
     //Ejercicio 15.3
-    //apartado q
+    //apartado a
     public Persona elMasJoven() {
         return listaPersonas.stream()
                 .min(Comparator.comparing(Persona::getFechaDeNacimiento))
