@@ -27,7 +27,7 @@ public class Personas {
         return listaPersonas.stream()
                 .mapToLong(Persona::calcularEdad)
                 .min()
-                .orElse(0L);
+                .orElse(0);
     }
     //apartado d
     public double calcularMediaDeEdad() {
